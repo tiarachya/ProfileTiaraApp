@@ -40,7 +40,7 @@ fun BiodataScreen() {
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.drawable.foto_tiara),
+                painter = painterResource(id = R.drawable.foto_tiara1),
                 contentDescription = "Foto Tiara",
                 modifier = Modifier
                     .size(160.dp)
