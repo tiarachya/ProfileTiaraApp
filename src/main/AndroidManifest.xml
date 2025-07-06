@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProfileTiaraApp"
         tools:targetApi="31">
         <activity
+            android:name=".AktivitasActivity"
+            android:exported="false" />
+        <activity
             android:name=".HobiActivity"
             android:exported="false" />
         <activity

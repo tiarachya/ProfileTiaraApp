@@ -40,7 +40,7 @@ fun BiodataScreen() {
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.drawable.foto_tiara),
+                painter = painterResource(id = R.drawable.foto_tiara1),
                 contentDescription = "Foto Tiara",
                 modifier = Modifier
                     .size(160.dp)
@@ -85,7 +85,7 @@ fun BiodataScreen() {
                 color = Color.Gray
             )
             Text(
-                text = "tiara@email.com",
+                text = "tiarachya888@gmail.com",
                 fontSize = 18.sp
             )
 

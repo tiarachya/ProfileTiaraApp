@@ -28,6 +28,9 @@ class MainActivity : ComponentActivity() {
                 onPendidikanClick = {
                     startActivity(Intent(this, PendidikanActivity::class.java))
                 },
+                onAktivitasClick = {
+                    startActivity(Intent(this, AktivitasActivity::class.java))
+                },
                 onHobiClick = {
                     startActivity(Intent(this, HobiActivity::class.java))
                 }
@@ -40,6 +43,7 @@ class MainActivity : ComponentActivity() {
 fun ProfilSayaScreen(
     onBiodataClick: () -> Unit,
     onPendidikanClick: () -> Unit,
+    onAktivitasClick: () -> Unit,
     onHobiClick: () -> Unit
 ) {
     Column(
@@ -95,6 +99,14 @@ fun ProfilSayaScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
+        // Tombol Aktivitas Sehari-hari
+        Button(
+            onClick = onAktivitasClick,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Aktivitas Sehari-hari")
+        }
+
         // Tombol Hobi
         Button(
             onClick = onHobiClick,
@@ -111,6 +123,7 @@ fun PreviewProfilSaya() {
     ProfilSayaScreen(
         onBiodataClick = {},
         onPendidikanClick = {},
+        onAktivitasClick = {},
         onHobiClick = {}
     )
 }
