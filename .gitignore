@@ -1,1 +1,15 @@
+<<<<<<< HEAD
 /build
+=======
+# Abaikan folder build dan gradle cache
+.gradle/
+.idea/
+/build/
+/app/build/
+
+# Abaikan file konfigurasi lokal
+local.properties
+
+# Abaikan file Android Studio
+*.iml
+>>>>>>> origin/main
